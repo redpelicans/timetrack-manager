@@ -1,23 +1,6 @@
 module.exports = {
   server: {
-     host: 'timetrack.redpelicans.com'
-   , port: 80
-   , get url(){ return 'http://' + this.host + ':' + this.port } 
+   port: 80
   },
-  db: {
-    host: 'mongo',
-    port: 27017,
-    options:{
-      auto_reconnect: true,
-      poolSize: 10, 
-      w: 1, 
-      strict: true, 
-      native_parser: true
-    },
-    database: 'timetrack',
-  },
-  secretKey: 'secret',
-  google:{
-    clientId: "clientId"
-  }
+  secret: 'secret'
 }
