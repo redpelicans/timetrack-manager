@@ -2,8 +2,8 @@ FROM node:5.0.0
 
 RUN git clone https://github.com/redpelicans/timetrack.git /timetrack
 
-ENV TIMETRACK_REVISION c31465ac44e66ac19edf56ab3929f9ca030ae678
-ENV TIMETRACK_TAG c31465ac44e6
+ENV TIMETRACK_REVISION c0c35ada2347496f80726b524a5d443a517b270c
+ENV TIMETRACK_TAG c0c35ada2347
 
 RUN \
   cd /timetrack && \
