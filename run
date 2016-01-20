@@ -1,2 +1,0 @@
-npm install
-GITHOOK_SECRET=52bf736d-051e-45e4-ba4b-605b0b40aa86 DEBUG=main:* node main.js

@@ -1,10 +1,5 @@
 FROM node:5.0.0
 
-RUN apt-get update && apt-get install -y git vim-tiny
-
-RUN npm install -g n_  \
-&& npm cache clear
-
 RUN git clone https://github.com/redpelicans/timetrack.git /timetrack
 
 ENV TIMETRACK_REVISION __HASH__
