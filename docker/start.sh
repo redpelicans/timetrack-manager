@@ -2,4 +2,4 @@
 
 cp /config/params.js /timetrack
 
-NODE_ENV=production DEBUG=timetrack:* node server/dist/main.js
+NODE_ENV=production DEBUG=timetrack:* node dist/server/main.js
