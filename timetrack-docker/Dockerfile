@@ -1,9 +1,10 @@
-FROM node:5.0.0
+FROM node:5-slim
 
+RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/redpelicans/timetrack.git /timetrack
 
-ENV TIMETRACK_REVISION 0c54a10fa4d1d90ea9d9fafd24d21e0d511d095d
-ENV TIMETRACK_TAG 0c54a10fa4d1
+ENV TIMETRACK_REVISION 839b0e8d80b35ba73899d2891b9a263287c2b5ac
+ENV TIMETRACK_TAG 839b0e8d80b3
 
 RUN \
   cd /timetrack && \
